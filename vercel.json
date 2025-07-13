@@ -1,12 +1,10 @@
 {
   "version": 2,
-  "env": {
-    "VITE_BACKEND_URL": "https://your-backend.onrender.com"
-  },
   "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "https://your-backend.onrender.com/api/$1"
-    }
-  ]
+    { "source": "/(.*)", "destination": "/" }
+  ],
+  "env": {
+    "VITE_BACKEND_URL": "https://your-backend.onrender.com",
+    "VITE_GROQ_API_KEY": "dummy_key_here"
+  }
 }
